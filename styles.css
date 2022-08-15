@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FCEABB;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+Center a child div via flexbox by making the parent container a flex
+container and then justify-content and align-items properties
+to center.
+*/
+
+.calculatorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: dashed 1px black;
+    width: 30rem;
+    height: 30rem;
+    
+}
+.calculatorOutline {
+    background-color: steelblue;
+    width: 25rem;
+    height: 25rem; 
+    
+}
+
+.calculatorDisplay {
+    width: 25rem;
+    height: 5rem;
+    background-color: lightblue;
+}
+.calculatorButtons {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 20rem;
+
+    
+}
+
+.clearButton {
+    grid-column: 1 / 4;
+}
+.operatorButton {
+    grid-column: 3 / 5;
+}
