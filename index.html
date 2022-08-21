@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>standard-calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
     
 </head>
 <body>
@@ -14,36 +15,37 @@
         <div class="calculatorContainer">
             <div class="calculatorOutline">
                 <div class="calculatorDisplay">
-                    <p id="calculatorDisplayTextTop">Null</p>
-                    <p id="calculatorDisplayTextBottom">0</p>
+                    <p data-previous-operand id="calculatorDisplayTextTop"></p>
+                    <p data-current-operand id="calculatorDisplayTextBottom"></p>
                 </div>
                 <div class="calculatorButtons">
                     <!--
                          disctinct class attributes to help with
                          styling in css later.
+                         distinct data atrributes to help with javascript later.
                      -->
-                   <button class="clearButton">Clear</button>
-                   <button class="operationsButton">/</button>
-                   <button class="numberButtons">7</button>
-                   <button class="numberButtons">8</button>
-                   <button class="numberButtons">9</button>
-                   <button class="operationsButton">x</button>
-                   <button class="numberButtons">4</button>
-                   <button class="numberButtons">5</button>
-                   <button class="numberButtons">6</button>
-                   <button class="operationsButton">-</button>
-                   <button class="numberButtons">1</button>
-                   <button class="numberButtons">2</button>
-                   <button class="numberButtons">3</button>
-                   <button class="operationsButton">+</button>
-                   <button class="numberButtons">0</button>
-                   <button class="numberButtons">.</button>
-                   <button class="operatorButton">=</button>
+                   <button data-all-clear class="clearButton">Clear</button>
+                   <button data-operation class="operationsButton">/</button>
+                   <button data-number class="numberButtons">7</button>
+                   <button data-number class="numberButtons">8</button>
+                   <button data-number class="numberButtons">9</button>
+                   <button data-operation class="operationsButton">x</button>
+                   <button data-number class="numberButtons">4</button>
+                   <button data-number class="numberButtons">5</button>
+                   <button data-number class="numberButtons">6</button>
+                   <button data-operation class="operationsButton">-</button>
+                   <button data-number class="numberButtons">1</button>
+                   <button data-number class="numberButtons">2</button>
+                   <button data-number class="numberButtons">3</button>
+                   <button data-operation class="operationsButton">+</button>
+                   <button data-number class="numberButtons">0</button>
+                   <button data-number class="numberButtons">.</button>
+                   <button data-equals class="operatorButton">=</button>
                 </div>            
             </div>
         </div>
-        <script src="javascript.js"></script>
+        
     </main>
-    
+     
 </body>
 </html>
